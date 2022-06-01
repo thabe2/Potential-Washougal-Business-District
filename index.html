@@ -41,6 +41,10 @@
   }).addTo(map);
 
   /* Display a point marker with pop-up text */
+     
+    L.marker([45.579394013065375, -122.35387972507937]).addTo(map) // EDIT marker coordinates
+  .bindPopup("Test pop-up <br> Built 2050"); // EDIT pop-up text message
+    
   L.marker([45.57869634022439, -122.35257861348077]).addTo(map) // EDIT marker coordinates
   .bindPopup("1801 Main St"); // EDIT pop-up text message
 
