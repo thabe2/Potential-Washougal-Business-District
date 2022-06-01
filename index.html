@@ -25,10 +25,11 @@
   <!-- Create the interactive map content with JavaScript (.js) -->
   <script>
   /* Set up the initial map center and zoom level */
-  var map = L.map('map'.setView([45.578, -122.343], 14);
- 
+  var map = L.map('map', {
+    center: [45.578745358957114, -122.34313521295282], // EDIT coordinates to re-center map
+    zoom: 15,  // EDIT from 1 (zoomed out) to 18 (zoomed in)
+    scrollWheelZoom: true, 
     tap: true
-    scrollWheelZoom.enabled
   });
 
   /* display basemap tiles -- see others at https://leaflet-extras.github.io/leaflet-providers/preview/ */
